@@ -76,7 +76,6 @@ app.delete("/logout", (req, res, next) => {
     if (err) {
       return next(err);
     }
-    req.flash("success_msg", "session terminated");
     res.redirect("/login");
   });
 });
